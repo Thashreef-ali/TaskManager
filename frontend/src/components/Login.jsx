@@ -6,8 +6,9 @@ import { toast, ToastContainer } from "react-toastify";
 
 const INITIAL_FORM = { email: "", password: "" };
 
-function Login({ onSubmit, onSwitchMode }) {
     const url = "https://taskmanager-backend-v5cr.onrender.com";
+
+function Login({ onSubmit, onSwitchMode }) {
 
   const [showPassword, setshowPassword] = useState(false);
   const [rememberMe, setrememberMe] = useState(false);
