@@ -4,7 +4,7 @@ import {CheckCircle2, MoreVertical,Edit2,Trash2, Calendar, Clock} from 'lucide-r
 import {format, isToday} from 'date-fns'
 import TaskModal from '../components/TaskModal'
 
-const API_BASE = 'http://localhost:4000/api'
+const API_BASE = 'https://taskmanager-backend-v5cr.onrender.com/api'
 function TaskItem({task,onRefresh,onLogout,showCompleteCheckbox = true }) {
   console.log("Task inside TaskItem:", task);
  const TI_CLASSES = {

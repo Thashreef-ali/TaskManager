@@ -2,7 +2,7 @@ import axios from "axios";
 import { Icon, Lock, Mail, User, UserPlus } from "lucide-react";
 import React, { useState } from "react";
 
-const API_URL = "http://localhost:4000";
+const API_URL = "https://taskmanager-backend-v5cr.onrender.com";
 const INITIAL_FORM = { name: "", email: "", password: "" };
 function SignUp({ onSwitchMode }) {
   const FIELDS = [

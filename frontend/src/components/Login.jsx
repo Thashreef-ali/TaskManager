@@ -7,6 +7,8 @@ import { toast, ToastContainer } from "react-toastify";
 const INITIAL_FORM = { email: "", password: "" };
 
 function Login({ onSubmit, onSwitchMode }) {
+    const url = "https://taskmanager-backend-v5cr.onrender.com";
+
   const [showPassword, setshowPassword] = useState(false);
   const [rememberMe, setrememberMe] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -41,7 +43,6 @@ function Login({ onSubmit, onSwitchMode }) {
     onSwitchMode?.();
   };
   const navigate = useNavigate();
-  const url = "http://localhost:4000";
   const fields = [
     { name: "email", type: "email", placeholder: "Email", icon: Mail },
     {

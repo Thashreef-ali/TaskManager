@@ -4,7 +4,7 @@ import { data, useNavigate } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
 import axios from 'axios'
 
-const API_URl = "http://localhost:4000";
+const API_URl = "https://taskmanager-backend-v5cr.onrender.com";
 
 function Profile({ setcurrentUser, onLogout }) {
   const [profile, setProfile] = useState({ name: "", email: "" });

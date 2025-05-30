@@ -62,7 +62,7 @@ border border-transparent hover:border-purple-200"
                 )}
                 <div className="absolute -bottom-0.5 -right-0.5 w-3 h-3 bg-green-400 rounded-full border-2 border-white animate-pulse"/>
               </div>{" "}
-              {/* ✅ Missing closing div added here */}
+              
               <div className="text-left hidden md:block">
                 <p className="text-sm font-medium text-gray-800">{user.name}</p>
                 <p className="text-xs text-gray-500 font-normal">
