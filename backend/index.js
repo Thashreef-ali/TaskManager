@@ -10,7 +10,8 @@ const port = process.env.PORT || 4000;
 
 // Middlewares
 app.use(cors({
-  origin: ['https://taskmanager-frontend-aeyy.onrender.com'],
+  origin: ['http://localhost:5173', 'https://taskmanager-frontend-aeyy.onrender.com'], // list your local and deployed frontend origins
+  credentials: true,
 }));
 app.use(express.json());
 
