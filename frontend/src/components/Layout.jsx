@@ -16,8 +16,9 @@ function Layout({onLogout,user}) {
     try {
       const token = localStorage.getItem('token')
       if(!token) throw new Error('No auth token found')
-        const response = await axios.get('https://taskmanager-backend-v5cr.onrender.com/api/gp', {
-  headers: { Authorization: `Bearer ${token}` }
+  const response = await axios.get('https://taskmanager-backend-v5cr.onrender.com/api/gp', {
+  headers: { Authorization: `Bearer ${token}` },
+  withCredentials:true
 });
     const data = response.data;  // <-- get actual data from response
 
