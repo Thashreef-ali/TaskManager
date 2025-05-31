@@ -10,7 +10,7 @@ const port = process.env.PORT || 4000;
 
 // Middlewares
 app.use(cors({
-  origin:true
+  origin:['https://taskmanager-frontend-aeyy.onrender.com']
 }));
 app.use(express.json());
 

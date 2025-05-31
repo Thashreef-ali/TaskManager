@@ -23,7 +23,7 @@ function Login({ onSubmit, onSwitchMode }) {
     setLoading(true);
 
     try {
-      const { data } = await axios.post(`${url}/api/login`, formData);
+      const { data } = await axios.post(`https://taskmanager-backend-v5cr.onrender.com/api/login`, formData);
       if (!data.token) throw new Error(data.message || "Login failed");
       localStorage.setItem("token", data.token);
       localStorage.setItem("userId", data.user.id);
@@ -65,7 +65,7 @@ useEffect(() => {
   if (token) {
     (async () => {
       try {
-        const { data } = await axios.get(`${url}/api/me`, {
+        const { data } = await axios.get(`https://taskmanager-backend-v5cr.onrender.com/api/me`, {
           headers: { Authorization: `Bearer ${token}` },
         });
 
