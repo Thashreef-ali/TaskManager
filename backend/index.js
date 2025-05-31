@@ -9,11 +9,10 @@ const app = express();
 const port = process.env.PORT || 4000;
 
 // Middlewares
-
 app.use(cors({
-  origin: "*", // Or use your frontend URL like "https://your-frontend.vercel.app"
-  methods: ["GET", "POST", "PUT", "DELETE"],
-  credentials: true
+  origin:['https://taskmanager-frontend-aeyy.onrender.com'],
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    allowedHeaders:["Content-Type"]
 }));
 app.use(express.json());
 
