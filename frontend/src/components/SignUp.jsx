@@ -28,7 +28,7 @@ function SignUp({ onSwitchMode }) {
     setMessage({ text: "", type: "" });
 
     try {
-      const { data } = await axios.post(`https://taskmanager-backend-v5cr.onrender.com/api/register`, formData);
+      const { data } = await axios.post(`${API_URL}/api/register`, formData);
       console.log("Signup Successfull", data);
       setMessage({
         text: "Registration Successful! You can now log in",
